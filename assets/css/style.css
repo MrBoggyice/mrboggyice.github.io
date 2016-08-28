@@ -25,13 +25,13 @@ body{
 .navstyle-links a:hover{
 	color: darkblue;
   transition: all .3s ease-in-out;
-  background: rgba(15, 110, 142, 0.1);
+  background: rgba(15, 110, 142);
+	cursor: pointer;
 }
 
 .nav a{
 	color: white;
-	margin: 0;
-	padding: 0;
+	cursor: pointer;
 }
 
 /*Text logo style*/
@@ -54,39 +54,42 @@ body{
   font-weight: bolder;
 }
 
+/*Reset all my anchor tags cursor to pointer*/
+a{
+	cursor: pointer;
+}
+
 /*Canvas style*/
 .drawingBoard{
-	background: #fff;
-	border: 1px solid black;
+	background: #2a5461;
+	border: 1px solid #b15a5a;
 	border-top: 0px;
 	border-radius: 4px;
 	height: 400px;
 	padding: 10px;
 }
-
+#canvas{
+	background: #fff;
+	border: 1px dotted blue;
+	cursor: crosshair;
+}
 /*Color palette styles*/
 .colorPalette input{
-	width: 20%;
+	width: 10%;
 	height: 10px;
 	margin-top: 10px;
-	float: left;
 	border: 0;
 	outline: 0;
 }
-.colorPalette input:hover{opacity: 0.5}
+.colorPalette input:hover{opacity: 0.5; cursor:pointer;}
 
 /*Palette colors*/
-#black {background-color: black;}
-#white {background-color: white;}
-#red {background-color: red;}
-#green {background-color: green;}
-#blue {background-color: blue;}
+.black {background-color: black;}
+.white {background-color: white;}
+.red {background-color: red;}
+.green {background-color: green;}
+.blue {background-color: blue;}
 
-/*Strips button defaut style*/
-/*.colorButton{
-	outline: 0;
-	border: 0;
-}*/
 
 .otherTools{
 	background: rgba(0, 0, 1, .7);
@@ -97,20 +100,16 @@ body{
 }
 
 .toolBox{
-	/*background: rgba(0, 0, 1, .7);*/
 	padding: 20px;
 	height: 400px;
 }
 
-.toolTip{
+.toolTextStyle{
 	font-weight: bold;
 	text-shadow: 0px 1px 2px red;
 	color: white;
+	padding-top: 10px;
 }
-
-/*.toolBox button{
-	padding: 10px;
-}*/
 
 /*Footer style*/
 .footerstyle{
